@@ -1,0 +1,166 @@
+/* Start Global Rules  */
+
+:root {
+    /* Primary colors  */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* Secondary colors  */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 5px;
+}
+
+/* End Global Rules  */
+.background {
+    background-image: url(../images/pattern-background-desktop.svg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.card {
+    width: 350px;
+    height: 580px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--Pale-blue);
+}
+
+.card .card-image img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.container .main-section {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container .main-section h2 {
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-bottom: 20px;
+}
+
+.container .main-section p {
+    font-size: 13px;
+    color: var(--Desaturated-blue);
+    line-height: 1.9;
+}
+
+.container .second-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: var(--Very-pale-blue);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.container .second-section img {
+    width: 45px;
+}
+
+.container .second-section .text {
+    margin-right: 25px;
+}
+
+.container .second-section .text h3 {
+    color: var(--Dark-blue);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.container .second-section .text p {
+    color: var(--Desaturated-blue);
+}
+
+.container .second-section button {
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    cursor: pointer;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.container .second-section button:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.7);
+}
+
+.container .last-section {
+    display: grid;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.container .last-section .first {
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Bright-blue);
+    height: 40px;
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    box-shadow: 0 10px 10px var(--Pale-blue);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .last-section .first:hover {
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.container .last-section .last {
+    background: no-repeat;
+    border: none;
+    outline: none;
+    color: var(--Desaturated-blue);
+    font-weight: 800;
+    font-size: 12px;
+    text-shadow: 0 0 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container .last-section .last:hover {
+    color: var(--Dark-blue);
+}
+
+@media (max-width: 767px) {
+    .background {
+        background-image: url(../images//pattern-background-mobile.svg);
+    }
+}
