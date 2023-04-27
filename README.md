@@ -1,6 +1,6 @@
 # Order summary component
 
-Front-End Mentor Challenge Using Pure HTML + CSS
+Responsive Front-End Mentor Challenge Using Pure HTML + CSS
 
 ### Level
 
