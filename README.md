@@ -1,4 +1,4 @@
-# Order summary component
+# Order Summary Component
 
 Responsive Front-End Mentor Challenge Using Pure HTML + CSS
 
